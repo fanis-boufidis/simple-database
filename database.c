@@ -200,3 +200,4 @@ int FindStudent(FILE *fDatabase, studentT students[], int *N, int *index_found){
     }
     return found;
 }
+
