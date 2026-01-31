@@ -10,13 +10,11 @@ typedef struct{
     char name[40];
     int year;
     int is_deleted;
-    int subjects;
 }studentT;
 
 bool AddStudent(FILE *fDatabase, studentT students[], int *N);
 bool DeleteStudent(FILE *fDatabase, studentT students[], int *N);
 int FindStudent(FILE *fDatabase, studentT students[], int *N,int *index_found);
-bool AddGPA(FILE *fDatabase, studentT students[]);
 
 int main()
 {
@@ -202,14 +200,3 @@ int FindStudent(FILE *fDatabase, studentT students[], int *N, int *index_found){
     }
     return found;
 }
-
-//ADD GPA
-bool AddGPA(FILE *fDatabase, studentT students[])
-{
-    int possibleID;
-    printf("Σε ποιόν φοιτητή θελετε να προσθέσετε βαθμό; (δώστε το id)");
-    scanf("%d", &possibleID);
-    //ΣΥΝΕΧΕΙΑ ΜΕΤΑ
-
-}
-
